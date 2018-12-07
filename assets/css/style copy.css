@@ -1,18 +1,20 @@
 .contentwrap {
     background-color: #ffffff;
-    height: 400px;
     margin: auto;
     clear: both;
+    padding-bottom: 10px;
 }
 body {
     background-color: #dddddd;
-    margin: auto;
-    width: 960px;
     clear: both;
+}
+.wrap {
+    margin: auto;
+    width: 90%;
 }
 header {
     margin: auto;
-    width: 960px;
+    width: 100%;
     clear: both;
 }
 img {
@@ -89,7 +91,7 @@ h3 {
 }
 .Hangman_image {
     width: 150px;
-    height: 125px;
+    height: 115px;
     float: left;
 }
 .Hangman_image img {
@@ -112,7 +114,7 @@ h3 {
 }
 .contentwrap_portfolio {
     background-color: #ffffff;
-    height: 510px;
+    height: 500px;
     margin: auto;
     clear: both;
 }
@@ -147,17 +149,11 @@ h3 {
     width: 650px;
     clear: both;
 }
-.portfolio_header {
-    margin: auto;
-    width: 650px;
-    clear: both;
-}
 .RPG_image {
     width: 150px;
-    height: 125px;
+    height: 115px;
     float: left;
     margin-left: 20px;
-    margin-right: 250px;
 }
 .RPG_image img {
     width: 100%;
@@ -179,7 +175,7 @@ h3 {
 }
 .Trivia_image {
     width: 150px;
-    height: 125px;
+    height: 115px;
     float: left;
     margin-right: 20px;
 }
@@ -204,9 +200,8 @@ h3 {
 }
 .Rutgers_image {
     width: 150px;
-    height: 125px;
+    height: 115px;
     float: left;
-    margin-right: 250px;
 }
 .Rutgers_image img {
     width: 100%;
@@ -229,7 +224,7 @@ h3 {
 }
 .RPS_image {
     width: 150px;
-    height: 125px;
+    height: 115px;
     float: left;
 }
 .RPS_image img {
@@ -253,20 +248,9 @@ h3 {
 }
 .contentwrap_contact {
     background-color: #ffffff;
-    height: 425px;
     margin: auto;
     clear: both;
-}
-.contact_body {
-    background-color: #dddddd;
-    margin: auto;
-    width: 760px;
-    clear: both;
-}
-.contact_header {
-    margin: auto;
-    width: 760px;
-    clear: both;
+    padding-bottom: 15px;
 }
 .contact_line {
     clear: both;
@@ -294,7 +278,7 @@ h3 {
     margin-top: 15px;
 }
 form {
-    width: 715px;
+    width: auto;
     margin-left: 20px;
     margin-right: 20px;
     line-height: 1.5;
@@ -321,24 +305,47 @@ button {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     margin-top: 15px;
 }
+.row1 {
+    width: 90%;
+    height: 115px;
+}
+.row2 {
+    width: 90%;
+    height: 115px;
+}
 @media screen and (max-width: 980px) and (min-width: 769px) {
     .contentwrap {
         width: 700px;
     }
+    .contentwrap_portfolio {
+        width: 700px;
+    }
+    .contentwrap_contact {
+        width: 700px;
+    }
+    header {
+        width: 700px;
+    }
 }
-@media screen and (max-width: 768px) and (min-width: 641px) {
+@media screen and (max-width: 768px) and (min-width: 700px) {
     .contentwrap {
         width: 640px;
     }
-    body {
+    .wrap {
+        width: 640px;
+    }
+    header {
         width: 640px;
     }
 }
-@media screen and (max-width: 640px) and (min-width: 0px) {
+@media screen and (max-width: 700px) and (min-width: 0px) {
     .contentwrap {
         width: 600px;
     }
-    body {
+    .wrap {
+        width: 600px;
+    }
+    header {
         width: 600px;
     }
 }
